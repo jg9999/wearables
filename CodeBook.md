@@ -19,11 +19,11 @@
      is ordered by the 'subject_id' and then by the 'activity'.  Please see codebook for variable name details  
        
   
-##Non-measurement Variables in tidy data set  
+###Non-measurement Variables in tidy data set  
 subject_id - the ID of the subject performing an activity and the associated measurements  
 activity - the text based label for the activity performed joined using the activity_id  
   
-##Measurement variables in tidy data set.    
+###Measurement variables in tidy data set.    
 All are from the original data set and ALL are the AVERAGE value by the 'subject_id' and the 'activity'  
   
 tBodyAcc.mean...X  
@@ -78,7 +78,7 @@ fBodyAccJerk.mean...Z
 fBodyAccJerk.std...  
   
   
-## Other Variables used in joining data  
+### Other Variables used in joining data  
  but not in the tidy dataset  
 activity_id - this is the id to associate with the text based 'activity'  
   
@@ -92,22 +92,12 @@ frequency of 20 Hz to remove noise. Similarly
 acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner   
 frequency of 0.3 Hz.   
   
-Subsequently  
- the body linear acceleration and angular velocity were derived in time to obtain Jerk signals   
+Subsequently the body linear acceleration and angular velocity were derived in time to obtain Jerk signals   
 (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated   
-using the Euclidean norm (tBodyAccMag  
- tGravityAccMag  
- tBodyAccJerkMag  
- tBodyGyroMag  
- tBodyGyroJerkMag).   
+using the Euclidean norm (tBodyAccMag  tGravityAccMag  tBodyAccJerkMag  tBodyGyroMag  tBodyGyroJerkMag).   
   
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ  
- fBodyAccJerk-XYZ  
-   
-fBodyGyro-XYZ  
- fBodyAccJerkMag  
- fBodyGyroMag  
- fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).  
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ   fBodyAccJerk-XYZ  fBodyGyro-XYZ  fBodyAccJerkMag  
+ fBodyGyroMag  fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).  
   
 These signals were used to estimate variables of the feature vector for each pattern:    
 '-XYZ' is used to denote 3-axial signals in the X  

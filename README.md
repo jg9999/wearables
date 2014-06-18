@@ -67,41 +67,42 @@ Outputs:  'tydydata.txt' file that contains an independent tidy data set with th
             and each activity  
   
     
-###Function:  'get_activityData'  
+###Function:  'get_activityData' 
 Description:  'get_activityData function is so that the general labels  are only loaded once  
                   then referenced in merging with either the training data or the test data  
 Input: none  
 Returns: 'activity' dataset  
    
+
 ###Function:  'get_featuresData'  
 Description:  'get_featuresData function is so that the general labels  are only loaded once  
                   then referenced in merging with either the training data or the test data  
 Input: none  
 Returns: 'features' dataset  
    
-###Function:  'prep_dataset'   
+###Function:  'prep_dataset'
 Description:  The 'prep_dataset' function gets and prepares a data set given the csv file or files  
                   and joins the relevant sets together  
  Input:  data folder, activityData, featuresData  
  Returns: Singled joined dataset for either 'training' or 'test'  
   
-###Function:  'filter_columns'  
+###Function:  'filter_columns'
 Description: 'filter_columns' function filters out all columns except those related to standard deviation and mean  
 Input: data set, grep pattern to identify specific variables/columns  
 Returns: filtered variable/column data set  
   
-###Function:  'merge_wearable_datasets'  
+###Function:  'merge_wearable_datasets'
 Description:  The 'merge_wearable_datasets' merges the training and test sets to create one data set  
 Input:  trainingData, testData  
 Return: merged raw data set  
   
-###Function:  'process_dataset'  
+###Function:  'process_dataset'
 Description:  The 'process_dataset' uses the combined data to find the average of each variable for each subject  
                   and each activity  
 Input: Merged dataset  
 Returns:  Tidy data set  
   
-###Function: 'output_dataset'  
+###Function: 'output_dataset'
 Description: The 'output_dataset' takes a data frame and writes it a file called 'tidydata.txt'  
 Input:  data frame (preferably tidy)  
 Returns: none  
